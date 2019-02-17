@@ -1,36 +1,37 @@
 default: &default
-  adapter: mysql2
-  host: 127.0.0.1
-  username: root
+  adapter: 'postgresql'
+  host: '127.0.0.1'
+  username: 'root'
+  password: '000000'
   pool: 5
   timeout: 5000
 
 development:
   <<: *default
-  database: flamehaze_development
+  database: 'flamehaze_development'
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: flamehaze_test
+  database: 'flamehaze_test'
 
 staging:
-  adapter: mysql2
-  host: 0.0.0.0
-  port: 3306
-  database: flamehaze_staging
+  adapter: 'postgresql'
+  host: '127.0.0.1'
+  port: 5432
+  database: 'flamehaze_staging'
   username: 'flamehaze'
   password: '000000'
   pool: 5
   timeout: 5000
 
 production:
-  adapter: mysql2
-  host: 0.0.0.0
-  port: 3306
-  database: flamehaze_production
+  adapter: 'postgresql'
+  host: '127.0.0.1'
+  port: 5432
+  database: 'flamehaze_production'
   username: 'flamehaze'
   password: '000000'
   poll: 25
