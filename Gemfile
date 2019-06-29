@@ -35,11 +35,14 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'bluepill'
 gem 'devise'
-gem 'graphql'
 gem 'sidekiq'
 gem 'sidekiq-unique-jobs'
 gem 'ruby-kafka'
 gem 'rest-client'
+gem 'graphiql-rails'                        ## GraphQL explorer
+gem 'graphql'                               ## GraphQL for Ruby
+gem 'graphql-batch', '~> 0.3.1'             ## GraphQL query optimization
+gem 'graphql-pro', git: 'git@github.com:SaberMyKing/graphql-pro.git', ref: '30e895a901a6daa242c5d4a84fe7f21f62ee42e9'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -77,5 +80,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-gem 'graphiql-rails', group: :development

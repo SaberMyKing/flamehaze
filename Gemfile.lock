@@ -1,5 +1,6 @@
 GEM
   remote: https://gems.ruby-china.com/
+  remote: https://a456577af68:81be61000a2@gems.graphql.pro/
   specs:
     actioncable (5.2.2)
       actionpack (= 5.2.2)
@@ -124,6 +125,11 @@ GEM
       railties
       sprockets-rails
     graphql (1.8.13)
+    graphql-batch (0.3.10)
+      graphql (>= 0.8, < 2)
+      promise.rb (~> 0.7.2)
+    graphql-pro (1.10.6)
+      graphql (>= 1.7.5)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (1.5.2)
@@ -167,6 +173,7 @@ GEM
       ast (~> 2.4.0)
     pg (1.1.4)
     powerpack (0.1.2)
+    promise.rb (0.7.4)
     public_suffix (3.0.3)
     puma (3.12.0)
     rack (2.0.6)
@@ -327,6 +334,8 @@ DEPENDENCIES
   factory_bot_rails
   graphiql-rails
   graphql
+  graphql-batch (~> 0.3.1)
+  graphql-pro!
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg
@@ -353,4 +362,4 @@ RUBY VERSION
    ruby 2.5.0p0
 
 BUNDLED WITH
-   1.16.6
+   1.17.3
