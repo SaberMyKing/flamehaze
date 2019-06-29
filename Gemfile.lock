@@ -1,6 +1,13 @@
+GIT
+  remote: git@github.com:SaberMyKing/graphql-pro.git
+  revision: e39c64b6fb79461be3930d68448ca400471287b2
+  ref: e39c64b6fb79461be3930d68448ca400471287b2
+  specs:
+    graphql-pro (1.4.2)
+      graphql (~> 1.5, >= 1.5.9)
+
 GEM
   remote: https://gems.ruby-china.com/
-  remote: https://a456577af68:81be61000a2@gems.graphql.pro/
   specs:
     actioncable (5.2.2)
       actionpack (= 5.2.2)
@@ -128,8 +135,6 @@ GEM
     graphql-batch (0.3.10)
       graphql (>= 0.8, < 2)
       promise.rb (~> 0.7.2)
-    graphql-pro (1.10.6)
-      graphql (>= 1.7.5)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (1.5.2)

@@ -42,7 +42,7 @@ gem 'rest-client'
 gem 'graphiql-rails'                        ## GraphQL explorer
 gem 'graphql'                               ## GraphQL for Ruby
 gem 'graphql-batch', '~> 0.3.1'             ## GraphQL query optimization
-gem 'graphql-pro', git: 'git@github.com:SaberMyKing/graphql-pro.git', ref: '30e895a901a6daa242c5d4a84fe7f21f62ee42e9'
+gem 'graphql-pro', git: 'git@github.com:SaberMyKing/graphql-pro.git', ref: 'e39c64b6fb79461be3930d68448ca400471287b2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
