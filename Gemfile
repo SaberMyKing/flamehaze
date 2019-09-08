@@ -44,6 +44,7 @@ gem 'graphql'                               ## GraphQL for Ruby
 gem 'graphql-batch', '~> 0.3.1'             ## GraphQL query optimization
 gem 'graphql-pro', git: 'git@github.com:SaberMyKing/graphql-pro.git', ref: 'e39c64b6fb79461be3930d68448ca400471287b2'
 gem 'rails-data-migrations'
+gem 'mongoid'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
