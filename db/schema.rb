@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_29_154437) do
+ActiveRecord::Schema.define(version: 2019_09_11_134208) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,9 @@ ActiveRecord::Schema.define(version: 2019_08_29_154437) do
     t.index ["province_id"], name: "index_cities_on_province_id"
   end
 
+  create_table "data_migrations", primary_key: "version", id: :string, force: :cascade do |t|
+  end
+
   create_table "districts", force: :cascade do |t|
     t.string "name", null: false
     t.integer "area_id", null: false
@@ -56,6 +59,17 @@ ActiveRecord::Schema.define(version: 2019_08_29_154437) do
     t.datetime "updated_at", null: false
     t.index ["area_id"], name: "index_provinces_on_area_id"
     t.index ["name"], name: "index_provinces_on_name"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "uid"
+    t.string "nickname"
+    t.string "avatar"
+    t.string "email"
+    t.string "mobile"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["uid"], name: "index_users_on_uid"
   end
 
 end
