@@ -21,12 +21,12 @@ end
 #
 # Table name: cities
 #
-#  area_id     :integer          not null
+#  id          :bigint(8)        not null, primary key
+#  name        :string           not null
 #  created_at  :datetime         not null
-#  id          :integer          not null, primary key
-#  name        :string(255)      not null
-#  province_id :integer
 #  updated_at  :datetime         not null
+#  area_id     :integer          not null
+#  province_id :bigint(8)
 #
 # Indexes
 #

@@ -10,12 +10,12 @@ end
 #
 # Table name: districts
 #
-#  area_id    :integer          not null
-#  city_id    :integer
+#  id         :bigint(8)        not null, primary key
+#  name       :string           not null
 #  created_at :datetime         not null
-#  id         :integer          not null, primary key
-#  name       :string(255)      not null
 #  updated_at :datetime         not null
+#  area_id    :integer          not null
+#  city_id    :bigint(8)
 #
 # Indexes
 #

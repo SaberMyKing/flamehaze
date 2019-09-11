@@ -10,11 +10,11 @@ end
 #
 # Table name: provinces
 #
-#  area_id    :integer          not null
+#  id         :bigint(8)        not null, primary key
+#  name       :string           not null
 #  created_at :datetime         not null
-#  id         :integer          not null, primary key
-#  name       :string(255)      not null
 #  updated_at :datetime         not null
+#  area_id    :integer          not null
 #
 # Indexes
 #
