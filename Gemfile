@@ -69,6 +69,8 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rvm'
   gem 'capistrano-bundler'
+  
+  gem 'awesome_print'
 end
 
 group :test do
